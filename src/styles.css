@@ -1,1 +1,237 @@
-/* You can add global styles to this file, and also import other style files */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;600;700;800&family=Rubik:wght@300;400;600;700;800&display=swap');
+:root{
+    --primary-color:#ff6b6b;
+    --secondary-color:#794afa;
+    --secondary-dark-color:#453c5c;
+    --white-color:#ffffff;
+    --light-bg-color:#f2f3f5;
+    --light-text-color:#7c899a;
+    --border-color:#e5e8ec;
+    --dark-color:#0a021c;
+    --font-small:13px;
+    --font-smaller:11px;
+    --percent100:100%;
+    --percent50:50%;
+    --fw3:300;
+    --fw5:500;
+    --fw6:600;
+    --fw7:700;
+    --fw8:800;
+    --trans-background-color:background-color .3s, color .3s;
+    --trans-background:background-color .3s;
+    --trans-color : color .3s
+}
+*,::before,::after{
+    box-sizing: border-box;
+}
+*{
+    margin: 0;
+padding: 0;
+}
+body{
+    font-family: 'Rubik',sans-serif;
+    font-style: 16px;
+    font-weight: 400;
+    line-height: 1.1;
+    color: var(--dark-color);
+    background-color: var(--white-color);
+}
+a{
+    text-decoration: none;
+    color: inherit;
+    -webkit-tap-highlight-color:transparent;
+}
+.container-head {
+    max-width: 1600px;
+    width: 100%;
+    background-color: #89c7f9;
+    padding: 11px 30px;
+    border-radius: 5px 5px 0 0;
+    box-shadow: 0 5px 10px rgba(0,0,0,0.15);
+    display: block;
+    margin: auto;
+}
+.container-head h5 {
+text-transform: uppercase;
+text-align: center;
+font-weight:400;
+}
+.container{
+  max-width: 1600px;
+  width: 100%;
+  background-color: #fff;
+  padding: 25px 30px;
+  border-radius: 0 0 5px 5px;
+  box-shadow: 0 5px 10px rgba(0,0,0,0.15);
+}
+.container .title::before{
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  height: 3px;
+  width: 30px;
+  border-radius: 5px;
+
+}
+.content form .user-details{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin: 20px 0 12px 0;
+}
+form .user-details .input-box{
+  margin-bottom: 15px;
+  width: calc(100% / 2 - 20px);
+}
+form .user-details .input-box1{
+  margin-bottom: 15px;
+  width: calc(100% / 3 - 20px);
+}
+form .user-details .input-box2{
+  margin-bottom: 15px;
+  width: calc(100% / 4 - 20px);
+}
+.details{
+  display: block;
+  font-weight: 500;
+  margin-bottom: 5px;
+}
+
+.user-details .input-box input{
+  width: 100%;
+  outline: none;
+  font-size: 16px;
+  border-radius: 5px;
+  padding-left: 15px;
+  transition: all 0.3s ease;
+}
+
+ form .gender-details .gender-title{
+  font-size: 20px;
+  font-weight: 500;
+ }
+ form .category{
+   display: flex;
+   width: 80%;
+   margin: 14px 0 ;
+   justify-content: space-between;
+ }
+ form .category label{
+   display: flex;
+   align-items: center;
+   cursor: pointer;
+ }
+ form .category label .dot{
+  height: 18px;
+  width: 18px;
+  border-radius: 50%;
+  margin-right: 10px;
+  background: #d9d9d9;
+  border: 5px solid transparent;
+  transition: all 0.3s ease;
+}
+ #dot-1:checked ~ .category label .one,
+ #dot-2:checked ~ .category label .two,
+ #dot-3:checked ~ .category label .three{
+   background: #9b59b6;
+   border-color: #d9d9d9;
+ }
+ form input[type="radio"]{
+   display: none;
+ }
+ form .button{
+   height: 45px;
+   margin: 35px 0
+ }
+ form .button input{
+   height: 100%;
+   width: 100%;
+   border-radius: 5px;
+   border: none;
+   color: #fff;
+   font-size: 18px;
+   font-weight: 500;
+   letter-spacing: 1px;
+   cursor: pointer;
+   transition: all 0.3s ease;
+   background: linear-gradient(135deg, #71b7e6, #9b59b6);
+ }
+ form .button input:hover{
+  /* transform: scale(0.99); */
+  background: linear-gradient(-135deg, #71b7e6, #9b59b6);
+  }
+  .Refresh-btn {
+    height: 30px;
+    margin: 2em;
+    width: 80px;
+    background: #2196F3;
+    border-radius: 4px;
+    color: #fff;
+    border: none;
+    opacity: .7;
+}
+.Refresh-btn:active{
+    opacity: 1;
+    text-decoration: underline;
+    box-shadow: 0 2px #666;
+    transform: translateY(2px);
+}
+ @media(max-width: 584px){
+  ul li .inputbox input{
+    width: 100%;
+}
+ .container{
+  max-width: 100%;
+}
+
+form .user-details .input-box{
+    margin-bottom: 15px;
+    width: 100%;
+  }
+  form .user-details .input-box1{
+    margin-bottom: 15px;
+    width: 100%;
+  }
+
+
+  form .category{
+    width: 100%;
+  }
+  .content form .user-details{
+    overflow-y: scroll;
+  }
+  .user-details::-webkit-scrollbar{
+    width: 5px;
+  }
+  .Refresh-btn {
+    width: 100%;
+    background: #2196F3;
+    border-radius: 4px;
+    color: #fff;
+    border: none;
+    opacity: .7;
+}
+.Refresh-btn:active{
+    opacity: 1;
+    text-decoration: underline;
+    box-shadow: 0 2px #666;
+    transform: translateY(2px);
+}
+  }
+@media screen and (max-width:768px){
+  form .user-details .input-box2 {
+    margin-bottom: 15px;
+    width: calc(100% / 2 - 20px);
+  }
+}
+
+
+  @media screen and (max-width:1280px) {
+    /* .desktop-hide{
+      display: block;
+  }
+  .Mobile-hide{
+      display: none;
+  } */
+}

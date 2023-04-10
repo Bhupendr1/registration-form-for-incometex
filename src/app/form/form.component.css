@@ -1,0 +1,42 @@
+.Header-text {
+    background-color: rgb(43 137 226);
+    width: var(--percent100);
+    text-transform: uppercase;
+    font-family: 'Rubik';
+    margin: 0;
+    letter-spacing: 1.5px;
+}
+.Header-text h3{
+    font-weight: (--fw3);
+    font-size: .8em;
+    text-align:center;
+    color: var(--white-color);
+    margin-top: 5px;
+}
+.emp-list{
+    max-height: 500px;
+    overflow-y: auto;
+}
+.container ul{
+list-style: none;
+padding: 1em 2em;
+border: 1px solid var(--border-color);    
+gap: 2em;
+display: flex;
+flex-direction: column;
+gap: 1.5em;
+}
+.Mobile-hide{
+    max-height: 830px;
+}
+
+.accordion-body ul li{
+    display: flex;
+}
+ul li .lable{
+    min-width: 50%;
+    width: 50%;
+}
+ul li .inputbox{
+    width: 50%;
+}
