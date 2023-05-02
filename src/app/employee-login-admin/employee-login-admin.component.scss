@@ -1,0 +1,16 @@
+.body {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    position: relative;
+    font-family: sans-serif;
+}
+
+  
+@media screen and (min-width: 200px){
+    .Fromborder{
+margin: .5rem 0;
+    }
+
+}
+    

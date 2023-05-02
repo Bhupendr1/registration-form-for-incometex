@@ -1,0 +1,312 @@
+<div id="page" class="site" [class.showmenu]="toggle">
+<section class="header-section sticky-top-header">
+	<aside class="site-off desktop-hide">
+		<mat-card class="side_card">
+			<div class="off-canvas">
+				<div class="canvas-head flexitem">
+					<div class="right-main-header float-end me-lg-2">
+						<div class="avatar d-inline">
+						  <img src="{{url}}" alt="Not Found"  onerror="this.src='assets/images/noimage.jpg';">
+						</div>
+
+  					</div>
+					  <div class="avatar d-block d-sm-none">
+						<p class="m-0 subtitle-2" >{{userEmp_Details?.Name_EN}}Sharul Saxena</p>
+						<p class="f-12 m-0">ID : {{userEmp_Details?.ssoid}} 01520456481212</p>
+					</div>
+					<a href="#" (click)="closemenu($event)" class="t-close flexcenter"><i class="ri-close-line"></i></a>
+				</div>
+			  </div>
+			<mat-card-content>
+				<p class="w-100 mat-h3 font-weight-600 font-18 my-2 mb-3 text-white text-center heading_with_bg"
+					color="primary">My Request</p>
+		
+				<div class="card-body px-0 min-height-2 mt-2">
+					<mat-nav-list class="list_item font-14 mb-5 list_item_two">
+						<mat-list-item>Split Bill Report</mat-list-item>
+					<mat-accordion class="side-bar side-bar-menu-hover">
+							<mat-expansion-panel (opened)="panelOpenState = true"
+								(closed)="panelOpenState = false" class="side-bar-font">
+								<mat-expansion-panel-header>
+									<mat-panel-title>
+										<span class=""> Employee Corner</span>
+									</mat-panel-title>
+								</mat-expansion-panel-header>
+		
+								<ul class=" expension-child">
+									<a href="#">
+										<li class="side-bar-style">Employee Transfer Request</li>
+									</a>
+									<a href="#">
+										<li class="side-bar-style">Employee Details</li>
+									</a>
+
+									<mat-accordion class="side-bar side-bar-menu-hover">
+										<mat-expansion-panel (opened)="panelOpenState = true"
+											(closed)="panelOpenState = false" class="side-bar-font">
+											<mat-expansion-panel-header>
+												<mat-panel-title>
+													<span class="">TA-Medical Bills</span>
+												</mat-panel-title>
+											</mat-expansion-panel-header>
+					
+											<ul class=" expension-child">
+												<a href="#">
+													<li class="side-bar-style">Employee Medical Bill</li>
+												</a>
+												<a href="#">
+													<li class="side-bar-style">TA/Medical Annexure</li>
+												</a>
+												<a href="#">
+													<li class="side-bar-style">Employee TA Bills</li>
+												</a>
+												<a href="#">
+													<li class="side-bar-style">Employee Bill Forward</li>
+												</a>
+												<a href="#">
+													<li class="side-bar-style">Employee Bill Status</li>
+												</a>
+												<a href="#">
+													<li class="side-bar-style">Bill Wise Status</li>
+												</a>
+												
+											</ul>
+										</mat-expansion-panel>		
+								</mat-accordion>
+								<mat-accordion class="side-bar side-bar-menu-hover">
+									<mat-expansion-panel (opened)="panelOpenState = true"
+										(closed)="panelOpenState = false" class="side-bar-font">
+										<mat-expansion-panel-header>
+											<mat-panel-title>
+													<span class="">Master Data Request</span>
+											</mat-panel-title>
+										</mat-expansion-panel-header>
+				
+										<ul class=" expension-child">
+											<a href="#">
+												<li class="side-bar-style">Update Emp Pay Date</li>
+											</a>
+											<a href="#">
+												<li class="side-bar-style">Personal Details Updates</li>
+											</a>
+											<a href="#">
+												<li class="side-bar-style">Employee Scheme Request</li>
+											</a>
+											<a href="#">
+												<li class="side-bar-style">Update No Detail Request</li>
+											</a>
+											<a href="#">
+												<li class="side-bar-style">Personal Data Request</li>
+											</a>
+											<a href="#">
+												<li class="side-bar-style">Delete Account Update</li>
+											</a>
+											<a href="#">
+												<li class="side-bar-style">Personal Details Update</li>
+											</a>
+										</ul>
+									</mat-expansion-panel>		
+							</mat-accordion>
+							<mat-accordion class="side-bar side-bar-menu-hover">
+								<mat-expansion-panel (opened)="panelOpenState = true"
+									(closed)="panelOpenState = false" class="side-bar-font">
+									<mat-expansion-panel-header>
+										<mat-panel-title>
+											<span class="">Employee Report</span>
+										</mat-panel-title>
+									</mat-expansion-panel-header>
+			
+									<ul class=" expension-child">
+										<a href="#">
+											<li class="side-bar-style">Personal Details</li>
+										</a>
+										<a href="#">
+											<li class="side-bar-style">Last Pay Certificate</li>
+										</a>
+										<a href="#">
+											<li class="side-bar-style">Pay Slip Monthwise</li>
+										</a>
+										<a href="#">
+											<li class="side-bar-style">GA 55 Employee Details</li>
+										</a>
+										<a href="#">
+											<li class="side-bar-style">Employee Payment Report</li>
+										</a>
+									</ul>
+								</mat-expansion-panel>		
+						</mat-accordion>
+									<a href="#">
+										<li class="side-bar-style">Employee Deduction Request</li>
+									</a>
+									<a href="#">
+										<li class="side-bar-style">Nps Report</li>
+									</a>
+									<a href="#">
+										<li class="side-bar-style">Advance Salary Request</li>
+									</a>
+									<a href="#">
+										<li class="side-bar-style">Reimbursement Annual Declaration</li>
+									</a>
+									<mat-accordion class="side-bar side-bar-menu-hover">
+										<mat-expansion-panel (opened)="panelOpenState = true"
+											(closed)="panelOpenState = false" class="side-bar-font">
+											<mat-expansion-panel-header>
+												<mat-panel-title>
+											
+													<span class="">HOD Report</span>
+												</mat-panel-title>
+											</mat-expansion-panel-header>
+					
+											<ul class=" expension-child">
+												<a href="#">
+													<li class="side-bar-style">Employee Request Status Report</li>
+												</a>
+												<a href="#">
+													<li class="side-bar-style">Status of RequestID Report</li>
+												</a>
+											</ul>
+										</mat-expansion-panel>		
+								</mat-accordion>
+									<a href="#">
+										<li class="side-bar-style">Update No</li>
+									</a>
+									<a href="#">
+										<li class="side-bar-style">Reimbursement Adjustment</li>
+									</a>
+									<a href="#">
+										<li class="side-bar-style">Office-Wise Employee Detail Report</li>
+									</a>
+									<a href="#">
+										<li class="side-bar-style">Logout</li>
+									</a>
+								</ul>
+							
+							</mat-expansion-panel>		
+					</mat-accordion>
+
+					<mat-list-item>log-out</mat-list-item>
+					</mat-nav-list>
+				</div>
+		
+		
+				<div class="card help border-0">
+					<div class="card-header border-bottom-0 bg-transparent d-flex justify-content-between">
+						<h3>Need Help ?</h3> <img src="./assets/images/support.svg" class="helpimg" />
+					</div>
+					<div class="card-body">
+						<p>Have questions or concerns regarding your profile? Our experts are here to help!</p>
+						<button class="btn btn-primary">Chat with Us</button>
+					</div>
+				</div>
+		
+			</mat-card-content>
+		</mat-card>
+	  </aside>
+
+	<div class="header-container">
+		<div class="container-fluid  ">
+			<div class="row d-none d-lg-block" style="background-color: #F4F4F4;">
+				<div class="col-12">
+					<div class="upper-header-content-box d-flex justify-content-between py-1">
+						<div class="right-upper-header d-flex align-items-center">
+							<a href="#">
+								<p class="upper-header-menu-text">भारत सरकार</p>
+							</a>
+							<a href="#">
+								<p class="upper-header-menu-text">Goverment of India</p>
+							</a>
+						</div>
+						<div class="right-upper-header d-flex align-items-center">
+	
+							<a href="#">
+								<p class="upper-header-menu-text">Skip to main content</p>
+							</a>
+							<a href="#" class="d-flex justify-content-center align-items-center">
+								<p class="upper-header-menu-text w-color">Change Text Size</p>
+								<ul class="m-0">
+									<li class="w-color ms-2">A+</li>
+									<li class="w-color ms-2">A</li>
+									<li class="w-color ms-2">A-</li>
+								</ul>
+							</a>
+							<a href="#"><span class="w-color"><i class="ri-wheelchair-fill"></i></span></a>
+							<a href="#">
+								<div class="dropdown">
+									<a class="w-color dropdown-toggle f-12 b-0" href="JavaScript:Void(0);" role="button"
+										id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">
+										English
+									</a>
+  
+									<ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+										<li><a class="dropdown-item" href="JavaScript:Void(0);">Hindi</a></li>
+									</ul>
+								</div>
+							</a>
+						</div>
+					</div>
+				</div>
+			</div>
+			<header>
+			<div class="row justify-content-center justify-content-sm-between py-3 main-header-background">
+				<div class="col-6">
+					<div class="left-main-header ms-lg-2">
+						<a href="" routerLink=""><img src="../../assets/images/logo.png" alt="left-header-image" class="img-fluid"></a>
+					</div>
+				</div>
+				<div class="col-6 d-none d-sm-block">
+					<div class="right-main-header float-end me-lg-2">
+						<div class="avatar d-inline">
+						  <img src="{{url}}" alt="Not Found" onerror="this.src='assets/images/noimage.jpg';">
+						</div>
+						<div class="avatar ms-2 ">
+						  <p class="m-0 subtitle-2 " >{{userEmp_Details?.Name_EN}}Sharul Saxena</p>
+						  <p class="f-12 m-0 subtitle-3 ">ID : {{userEmp_Details?.ssoid}} 01520456481212</p>
+					  </div>
+  					</div>
+				</div>
+			</div>
+			<div class="d-flex justify-content-center align-items-center d-block d-sm-none m-0 p-0 p-2 ">
+				<div class="leftside ">
+				
+				  <ul class="d-flex mb-0 align-items-center list-unstyled border-bottom-2">
+					<li>
+						<p class="m-0 active middle-menu-border p-0 px-2 ">Home : <span>{{userEmp_Details?.DEPT_ID}}</span></p>
+					</li>
+
+					<li>
+						<p class="m-0 active p-0 px-2">Office Name:{{userEmp_Details?.OFFICE_NAME_EN}}</p>
+					</li>
+				</ul>
+				</div>			
+			</div>
+			<div class="d-flex justify-content-between align-items-center p-2 border-bottom-2">
+				<div class="leftside">
+				
+				  <ul class="d-flex mb-0 align-items-center list-unstyled">
+					<li>
+						<a  (click)="clickEvent($event)"  href="#" class="trigger desktop-hide"><span class="i ri-menu-2-line"></span></a>
+					</li>
+					<li class="d-none d-sm-block">
+						<p class="m-0 active middle-menu-border p-0 px-2 ">Home : <span>{{userEmp_Details?.DEPT_ID}}</span></p>
+					</li>
+
+					<li class="d-none d-sm-block">
+						<p class="m-0 active p-0 px-2">Office Name:{{userEmp_Details?.OFFICE_NAME_EN}}</p>
+					</li>
+				</ul>
+				</div>
+				<div class="rigtside">
+					<div><button class="btn white-button "><span class="secondary_blue f-12">Logout</span></button>
+					</div>
+				</div>						
+			</div>
+
+			</header>
+		</div>
+	</div>
+  </section>
+</div>
+
+  
+  
+  

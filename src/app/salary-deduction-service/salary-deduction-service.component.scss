@@ -1,0 +1,23 @@
+.body{
+	background-color: rgb(221, 239, 255);
+	min-height: 100vh;
+	display: flex;
+	justify-content: center;
+	position: relative;
+	font-family: sans-serif;
+}
+.employeDetails1{
+	width:70% !important;
+    margin-top: .5rem;
+	display: block;
+	margin: auto;
+	margin-top: 0.5rem;
+	border: 1px solid aliceblue;
+    background-color: #fff;
+}
+
+.card{
+	width:70% !important;
+	display: block;
+	margin: auto;
+}

@@ -1,0 +1,111 @@
+article {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  font-family: Roboto, "Helvetica Neue", sans-serif;
+}
+
+.sidebar {
+    width: 330px;
+    height: 100%;
+    overflow-y: auto;
+  }
+   
+  .sidebar::-webkit-scrollbar {
+    width: 0px;
+    height: 8px;
+    background-color: #fff;
+  }
+  
+  .heading_with_bg {
+    background: rgb(89, 154, 253);
+    background: linear-gradient(90deg, rgba(89, 154, 253, 1) 0%, rgba(27, 84, 177, 1) 100%);
+    padding: 5px 30px;
+    border-radius: 5px;
+    font-weight: 500;
+  }
+  
+  .side-bar-style {
+    border-radius: 0.2rem;
+    padding: .5rem .5rem .5rem 1.8rem;
+  }
+  
+  .side-bar-style:hover {
+    background-color: #e8effa;
+  }
+  
+  .side-bar .mat-expansion-panel:not([class*=mat-elevation-z]) {
+    box-shadow: none !important;
+  }
+  
+  .side-bar-menu-hover .mat-expansion-panel:not(.mat-expanded):hover {
+    background-color: #e9eff9 !important;
+  }
+  
+  .mat-accordion>.mat-expansion-panel-spacing {
+    border: 2px solid #d4e2f7;
+  }
+  
+  .side-bar {
+    .mat-expansion-panel-header-title span {
+        font-weight: bold;
+    }
+  }
+  
+  .side-bar .mat-expansion-panel:hover {
+    span {
+        color: #2a6dd9;
+    }
+  }
+  
+  .mat-drawer-opened {
+    border-radius: 0.625rem;
+  }
+  
+  .side-bar .mat-expansion-panel-header.mat-expanded {
+    background-color: #e9eff9 !important;
+    height: 50px;
+  
+    .mat-expansion-panel-header-title span {
+        color: #2a6dd9;
+    }
+  }
+  
+  .side-bar .expension-child a li:hover {
+    color: #2a6dd9;
+    font-weight: bold;
+  }
+  
+  .side-bar .expension-child {
+    list-style-type: none;
+    padding-left: 0px;
+  }
+  
+  .mat-expansion-panel-content .mat-expansion-panel-body {
+    padding: 0px 14px 16px !important;
+  }
+  
+  .mat-expansion-indicator::after {
+    color: #2a6dd9;
+  }
+  
+  .mat-expansion-indicator:active {
+    margin-top: 8px;
+  }
+  
+  ::ng-deep span.mat-expansion-indicator.ng-tns-c114-2.ng-trigger.ng-trigger-indicatorRotate.ng-star-inserted {
+    margin-top: 0px !important;
+  }
+  
+  .example-container{
+    background-color: #edf0f2;
+  }
+  
+  .example-sidenav{
+    .mat-card:not([class*=mat-elevation-z]){
+        box-shadow: none;
+    }
+  }
+  
+  
+  

@@ -1,2 +1,21 @@
-<app-form></app-form>
-<router-outlet></router-outlet>
+<article>
+    <app-header></app-header>
+    <div id="page" class="site" [class.showmenu]="toggle">
+    <div class="container-fluid">
+        <div class="row border p-0 py-sm-3">
+        <div class="mobile-hide col-sm-6 col-md-4 col-lg-2">
+
+            <app-togglesidemenu></app-togglesidemenu>
+        </div>
+          <div class="col-sm-6 col-md-8 col-lg-10">
+            <mat-card class="side_card">
+                <mat-card-content>
+                    <router-outlet></router-outlet>
+                </mat-card-content>
+              </mat-card>
+            </div>
+        </div>
+        </div>
+    </div>
+    <app-footer style="margin-top: auto;"></app-footer>
+</article>

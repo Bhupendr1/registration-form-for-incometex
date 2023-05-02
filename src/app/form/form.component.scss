@@ -14,13 +14,13 @@
     margin-top: 5px;
 }
 .emp-list{
-    max-height: 500px;
+    max-height: 800px;
     overflow-y: auto;
+    border: 1px solid var(--border-color);
 }
 .container ul{
 list-style: none;
 padding: 1em 2em;
-border: 1px solid var(--border-color);    
 gap: 2em;
 display: flex;
 flex-direction: column;

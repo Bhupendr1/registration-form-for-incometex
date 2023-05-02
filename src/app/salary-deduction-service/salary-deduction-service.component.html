@@ -1,0 +1,141 @@
+<!-- <div class="body">
+    <div class="containers">
+        <div class="employeDetails">
+            <div class="cards">
+                <div class="card-a"><a href="#" class="bigbtn ws-grey ws-hover-black" routerLink="">Home</a></div>
+                <div class="card-a"><a href="#" class="bigbtn ws-grey ws-hover-black">Login Id:<span>5</span></a></div>
+                <div class="card-a"><a href="#" class="bigbtn ws-grey ws-hover-black">Year:<span>2023-2024</span></a></div>
+                <div class="card-a"><a href="#" class="bigbtn ws-grey ws-hover-black">Office Name:<span>NIC</span></a></div>
+                <div class="card-a"><a href="#" class="bigbtn ws-grey ws-hover-black">Logout</a></div>
+            </div>
+        </div>
+        <form [formGroup]="form" class="needs-validation" [class.was-validated]="isFormSubmitted">
+
+            <div class="card">
+                <div class="card-header">
+                    <h3>Salary Deduction Request</h3>
+                </div>
+                <div class="card-body">
+                    <div class="row  justify-content-center">
+                        <div class="col-12 col-md-6">
+                            <div class="Fromborder">
+                                    <label for="SalaryDeduction" class="form-label">Select Deduction</label>
+                                    <select class="form-select" aria-label="Default select example" formControlName="SalaryDeduction" required>
+                                        <option selected>Open this select menu</option>
+                                        <option value="1">One</option>
+                                        <option value="2">Two</option>
+                                        <option value="3">Three</option>
+                                      </select>
+                                    <div class="invalid-feedback" *ngIf="form.controls['SalaryDeduction'].errors?.['required']">
+                                        Salary Deduction cannot be empty
+                                    </div>
+                             </div>
+                        </div>
+                                            
+                        </div>
+                    </div>
+                    <div class="logibtn">
+                        <button type="submit" class="btn btn-dark" (click)="validateForm()">Show Report</button>
+                    </div>
+            </div>
+     
+        <div class="employeDetails1">
+            <table role="table" class="surface-card">
+                <thead role="rowgroup">
+                  <tr role="row">
+                    <th>Deduction Name</th>
+                    <th>Deduction Code</th>
+                    <th>Deduction Amount</th>
+                    <th>Reason</th>
+                    <th>Action</th>
+                  </tr>
+                </thead>
+                <tbody role="rowgroup">
+                  <tr role="row">
+                    <td>GPF</td>
+                    <td>215</td>
+                    <td><input type="number" formControlName="DeductionAmount" class="form-control" required=""></td>
+                    <td><textarea class="form-control" formControlName="Reason" placeholder="Leave a comment here" id="floatingTextarea2" style="height: 10px"></textarea></td>
+                    <td>
+                        <a href="#" class="smallbtn ws-grey ws-hover-green mx-2">Save</a>
+                        <a href="3" class="smallbtn ws-grey ws-hover-red">Cancel</a>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+         
+        </div>
+    </form>
+   </div>
+</div> -->
+
+<!-- <div class="body">
+    <div class="containers">
+        <div class="employeDetails">
+            <div class="cards">
+                <div class="card-a"><a href="#" class="bigbtn ws-grey ws-hover-black" routerLink="">Home</a></div>
+                <div class="card-a"><a href="#" class="bigbtn ws-grey ws-hover-black">Login Id:<span>5</span></a></div>
+                <div class="card-a"><a href="#" class="bigbtn ws-grey ws-hover-black">Year:<span>2023-2024</span></a></div>
+                <div class="card-a"><a href="#" class="bigbtn ws-grey ws-hover-black">Office Name:<span>NIC</span></a></div>
+                <div class="card-a"><a href="#" class="bigbtn ws-grey ws-hover-black">Logout</a></div>
+            </div>
+        </div>
+
+   </div>
+</div> -->
+
+<div class="box1">
+    <form [formGroup]="form" class="needs-validation" [class.was-validated]="isFormSubmitted" (ngSubmit)="validateForm()">
+    <div class="card">
+        <div class="card-header header">
+            <img src="https://paymanagerddo.rajasthan.gov.in/img/signbord.png" class="Logo-img" alt="...">
+            <h5 class="card-title">Salary Deduction Request</h5>
+        </div>
+        <div class="card-body">
+            <div class="card-text">
+                    <div class="mb-3">
+                        <div class="Fromborder">
+                            <label for="SalaryDeduction" class="form-label">Select Deduction</label>
+                            <select class="form-select w-full" aria-label="Default select example" formControlName="SalaryDeduction" required >
+                                <option selected>Open this select menu</option>
+                                <option value="1">One</option>
+                                <option value="2">Two</option>
+                                <option value="3">Three</option>
+                              </select>
+                            <div class="invalid-feedback" *ngIf="form.controls['SalaryDeduction'].errors?.['required']">
+                                Salary Deduction cannot be empty
+                            </div>
+                     </div>
+                    </div>
+           </div>
+        </div>
+    </div>
+    <div class="employeDetails1">
+        <table role="table" class="surface-card">
+            <thead role="rowgroup">
+              <tr role="row">
+                <th>Deduction Name</th>
+                <th>Deduction Code</th>
+                <th>Deduction Amount</th>
+                <th>Reason</th>
+                <th>Action</th>
+              </tr>
+            </thead>
+            <tbody role="rowgroup">
+              <tr role="row">
+                <td>GPF</td>
+                <td>215</td>
+                <td><input type="number" formControlName="DeductionAmount" class="form-control" required=""></td>
+                <td><textarea class="form-control" formControlName="Reason" placeholder="Leave a comment here" id="floatingTextarea2" style="height: 10px"></textarea></td>
+                <td>
+                    <a href="#" class="smallbtn ws-grey ws-hover-green mx-2">Save</a>
+                    <a href="3" class="smallbtn ws-grey ws-hover-red">Cancel</a>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+     
+    </div>
+    
+</form>
+</div>

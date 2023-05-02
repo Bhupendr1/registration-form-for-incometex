@@ -1,0 +1,89 @@
+<!-- <div class="body">
+    <div class="containers">
+        <div class="employeDetails">
+            <div class="cards">
+                <div class="card-a"><a href="#" class="bigbtn ws-grey ws-hover-black" routerLink="">Home</a></div>
+                <div class="card-a"><a href="#" class="bigbtn ws-grey ws-hover-black">Login Id:<span>5</span></a></div>
+                <div class="card-a"><a href="#" class="bigbtn ws-grey ws-hover-black">Year:<span>2023-2024</span></a></div>
+                <div class="card-a"><a href="#" class="bigbtn ws-grey ws-hover-black">Office Name:<span>NIC</span></a></div>
+                <div class="card-a"><a href="#" class="bigbtn ws-grey ws-hover-black">Logout</a></div>
+            </div>
+        </div>
+
+   </div>
+</div> -->
+
+<div class="box">
+    <div class="card" style="width: 30rem">
+        <div class="card-header header">
+            <img src="https://paymanagerddo.rajasthan.gov.in/img/signbord.png" class="Logo-img" alt="...">
+            <h5 class="card-title">Employee Admin Login</h5>
+        </div>
+        <div class="card-body">
+            <div class="card-text">
+                <form [formGroup]="form" class="needs-validation" [class.was-validated]="isFormSubmitted" (ngSubmit)="validateForm()">
+                    <div class="mb-3">
+                            <div class="Fromborder">
+                                    <label for="TreasuryCode" class="form-label">Treasury Code*</label>
+                                    <input type="text" class="form-control" id="TreasuryCode" placeholder="Enter Treasury Code..."
+                                        formControlName="TreasuryCode" [ngClass]="{'is-invalid': isFormSubmitted && form.controls['TreasuryCode'].errors }" required />
+                                    <div class="invalid-feedback" *ngIf="form.controls['TreasuryCode'].errors?.['required']">
+                                        Treasury Code cannot be empty
+                                    </div>
+                                    <div class="invalid-feedback" *ngIf="form.controls['TreasuryCode'].errors?.['pattern']">
+                                        Treasury Code must be positive Interger
+                                    </div>
+                             </div>
+                        </div>
+                        <div class="mb-3">
+                            <div class="Fromborder">
+                                    <label for="DDOCode" class="form-label">DDO Code*</label>
+                                    <input type="text" class="form-control" id="DDOCode" placeholder="Enter Ddo Code amount..."
+                                        formControlName="DDOCode" [ngClass]="{'is-invalid': isFormSubmitted && form.controls['DDOCode'].errors }" required />
+                                    <div class="invalid-feedback" *ngIf="form.controls['DDOCode'].errors?.['required']">
+                                        Ddo Code cannot be empty
+                                    </div>
+                                    <div class="invalid-feedback" *ngIf="form.controls['DDOCode'].errors?.['pattern']">
+                                        Ddo Code must be a positive Interger
+                                    </div>
+                             </div>
+                        </div>
+                         <div class="mb-3">
+                            <div class="Fromborder">
+                                    <label for="OfficeCode" class="form-label">Office Code*</label>
+                                    <input type="text" class="form-control" id="OfficeCode" placeholder="Enter Office Code..."
+                                        formControlName="OfficeCode" [ngClass]="{'is-invalid': isFormSubmitted && form.controls['OfficeCode'].errors }" required />
+                                    <div class="invalid-feedback" *ngIf="form.controls['OfficeCode'].errors?.['required']">
+                                        Office Code cannot be empty
+                                    </div>
+                                    <div class="invalid-feedback" *ngIf="form.controls['OfficeCode'].errors?.['pattern']">
+                                        Office Code must be a positive integer
+                                    </div>
+                             </div>
+                        </div>
+                         <div class="mb-3">
+                            <div class="Fromborder">
+                                    <label for="loanAmount" class="form-label">Nic Uid*</label>
+                                    <input type="text" class="form-control" id="Nicuid" placeholder="Enter Nicu id..."
+                                        formControlName="Nicuid" [ngClass]="{'is-invalid': isFormSubmitted && form.controls['Nicuid'].errors }" required />
+                                    <div class="invalid-feedback" *ngIf="form.controls['Nicuid'].errors?.['required']">
+                                        Nicu id cannot be empty
+                                    </div>
+                                    <div class="invalid-feedback" *ngIf="form.controls['Nicuid'].errors?.['pattern']">
+                                        Nicuid must be a positive integer
+                                    </div>
+                             </div>
+                        </div>                                    
+                    <div class="mb-3 row justify-content-center gap-2">
+                        <button type="submit" class="btn btn-primarye">Login</button>
+                        <button type="reset" class="btn btn-Clear">Clear</button>
+                    </div>
+                    <div class="d-flex justify-content-between flex-column flex-sm-row align-items-center">
+                        <p>Form Status:<span [ngClass]="(form.valid)?'valid':'invalid'">{{ form.status | titlecase}}</span></p>
+                        <p>Total Hits= <span class="valid">271191119</span></p>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>

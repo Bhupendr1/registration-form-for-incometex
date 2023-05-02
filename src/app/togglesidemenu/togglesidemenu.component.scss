@@ -1,0 +1,114 @@
+.sidebar {
+  width: 330px;
+  height: 100%;
+  overflow-y: auto;
+}
+.sidebar::-webkit-scrollbar {
+  width: 0px;
+  height: 8px;
+  background-color: #fff;
+}
+
+.heading_with_bg {
+  background: rgb(89, 154, 253);
+  background: linear-gradient(90deg, rgba(89, 154, 253, 1) 0%, rgba(27, 84, 177, 1) 100%);
+  padding: 5px 30px;
+  border-radius: 5px;
+  font-weight: 500;
+}
+
+.side-bar-style {
+  border-radius: 0.2rem;
+  padding: .5rem .5rem .5rem 1.8rem;
+}
+
+.side-bar-style:hover {
+  background-color: #e8effa;
+}
+
+.side-bar .mat-expansion-panel:not([class*=mat-elevation-z]) {
+  box-shadow: none !important;
+}
+
+.side-bar-menu-hover .mat-expansion-panel:not(.mat-expanded):hover {
+  background-color:#fff !important;
+}
+.side-bar {
+  .mat-expansion-panel-header-title span {
+    font-size: 15px;
+  }
+}
+.side-bar .mat-expansion-panel-header {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	padding: 0 14px !important;
+	border-radius: inherit;
+	transition: height 225ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+// .mat-accordion>.mat-expansion-panel-spacing {
+//   border: 2px solid #d4e2f7;
+// }
+
+
+// .side-bar .mat-expansion-panel:hover {
+//   span {
+//       color: #2a6dd9;
+//   }
+// }
+
+// .mat-drawer-opened {
+//   border-radius: 0.625rem;
+// }
+
+
+.side-bar .mat-expansion-panel-header.mat-expanded {
+  height: 35px;
+
+  .mat-expansion-panel-header-title span {
+      color: #2a6dd9;
+  }
+}
+
+// .side-bar .expension-child a li:hover {
+//   color: #2a6dd9;
+//   font-weight: bold;
+// }
+
+.side-bar .expension-child {
+  list-style-type: none;
+  padding-left: 0px;
+}
+
+::ng-deep .mat-expansion-panel-content .mat-expansion-panel-body {
+  padding:.2rem !important;
+}
+
+
+// .mat-expansion-indicator::after {
+//   color: #2a6dd9;
+// }
+
+// .mat-expansion-indicator:active {
+//   margin-top: 8px;
+// }
+
+// ::ng-deep span.mat-expansion-indicator.ng-tns-c114-2.ng-trigger.ng-trigger-indicatorRotate.ng-star-inserted {
+//   margin-top: 0px !important;
+// }
+
+.example-container{
+  background-color: #FFF;
+}
+
+.example-sidenav{
+  .mat-card:not([class*=mat-elevation-z]){
+      box-shadow: none;
+  }
+}
+
+
+.side_card{
+  height: 100%;
+}
